@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardElevation="8dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="12dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="@drawable/card_background"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/reservationId"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="ID"
+            android:textAppearance="?attr/textAppearanceBody1"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/reservationFirstName"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="First Name"
+            android:textAppearance="?attr/textAppearanceBody1"
+            android:textColor="@color/black"/>
+
+        <ImageButton
+            android:id="@+id/viewDetailsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_marginStart="8dp"
+            android:background="@null"
+            android:contentDescription="@string/update_button_description"
+            android:src="@drawable/baseline_info_24" />
+
+
+        <ImageButton
+            android:id="@+id/updateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="@null"
+            android:src="@drawable/ic_edit"
+            app:tint="@color/colorAccent"
+            android:contentDescription="@string/update_button_description" />
+
+        <ImageButton
+            android:id="@+id/deleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="@null"
+            android:src="@drawable/ic_delete"
+            app:tint="@color/colorError"
+            android:contentDescription="@string/delete_button_description" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

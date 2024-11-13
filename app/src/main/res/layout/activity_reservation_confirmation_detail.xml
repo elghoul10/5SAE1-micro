@@ -1,0 +1,38 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Back Icon -->
+    <ImageView
+        android:id="@+id/back_icon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/ic_back"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="Back"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <!-- New Icon in the Top Right -->
+    <ImageView
+        android:id="@+id/right_icon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/cp_cr"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="New"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/reservation_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/back_icon"
+        android:layout_marginTop="16dp"/>
+</RelativeLayout>

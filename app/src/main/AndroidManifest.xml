@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.User_module"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".activity.AccommodationViewModel"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AddAccommodationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MaintenanceDetailActivity"
+            android:exported="false"
+            android:theme="@style/Theme.User_module" />
+        <activity
+            android:name=".activity.UpdateReservationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ReservationListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ReservationConfirmationDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ReservationConfirmationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AccommodationDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.DestinationDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ViewMaintenanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ListMaintenanceActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.AddEditMaintenanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ViewAssurancesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AddEditAssurancesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AssurancesListActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.DashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ResetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.EmailConfirmationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

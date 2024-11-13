@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/customBackgroundColor">
+
+    <!-- Back Icon -->
+    <ImageView
+        android:id="@+id/back_icon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/ic_back"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="Back"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_gravity="start"
+        android:padding="8dp"
+        android:background="?attr/selectableItemBackground" />
+
+    <!-- Add Site Button with rounded corners and shadow -->
+    <Button
+        android:id="@+id/buttonAddSite"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="?attr/colorPrimary"
+        android:elevation="6dp"
+        android:paddingHorizontal="20dp"
+        android:text="Add Assurance"
+        android:textColor="?android:attr/textColorPrimaryInverse"
+        android:textStyle="bold" />  <!-- Custom button states for interaction -->
+
+    <!-- RecyclerView for sites -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewSites"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="?attr/colorSurface"
+        android:elevation="4dp"
+        android:clipToPadding="false"
+        android:padding="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="16dp"
+        android:scrollbars="vertical"
+        android:clipToOutline="true" />
+
+</LinearLayout>

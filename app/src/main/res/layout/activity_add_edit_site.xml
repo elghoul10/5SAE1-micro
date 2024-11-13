@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- Back Icon with Elevated Button -->
+    <ImageView
+        android:id="@+id/back_icon"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/ic_back"
+        android:contentDescription="Back"
+        android:layout_marginBottom="24dp"
+        android:layout_gravity="start"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <!-- Title Input Field with Modern Text Input -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/title_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:boxStrokeColor="@color/accent"
+        app:boxBackgroundMode="filled"
+        app:hintTextColor="@color/accent">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Title"
+            android:inputType="text"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="16sp"
+            android:minHeight="56dp"
+            android:padding="12dp"
+            android:backgroundTint="@color/material_dynamic_neutral90" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Description Input Field with Rounded Corner Style -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/description_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        app:boxStrokeColor="@color/accent"
+        app:boxBackgroundMode="filled"
+        app:hintTextColor="@color/accent">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description"
+            android:inputType="textMultiLine"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="16sp"
+            android:minHeight="56dp"
+            android:padding="12dp"
+            android:backgroundTint="@color/material_dynamic_neutral90"
+            android:lines="4" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Rounded Button to Select Image -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonSelectImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:text="Select Image"
+        android:textColor="@color/black"
+        app:cornerRadius="16dp"
+        android:backgroundTint="@color/buttonColor" />
+
+    <!-- ImageView to Preview Selected Image with Round Shape -->
+    <ImageView
+        android:id="@+id/imageViewPreview"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="Restaurant Image Preview"
+        android:background="?attr/colorSurface"
+        android:clipToOutline="true"
+        android:outlineProvider="background" />
+
+    <!-- Save Button Styled for a Modern Look -->
+    <Button
+        android:id="@+id/buttonSaveForum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Save"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/accent"
+        android:layout_marginTop="24dp"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="12dp"/>
+
+</LinearLayout>
