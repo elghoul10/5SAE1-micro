@@ -1,5 +1,6 @@
 package tn.esprit.userinterface;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -33,6 +34,10 @@ public class UpdateUser extends AppCompatActivity {
                 email = email_input.getText().toString().trim();
                 password = Password_input.getText().toString().trim();
                 myDB.updateUser(Integer.parseInt(id), username, email, password);
+                Intent intent = new Intent(view.getContext(), UsersList.class);
+                view.getContext().startActivity(intent);
+
+
             }
         });
     }

@@ -5,4 +5,44 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".home"/>
+    tools:context=".home">
+
+    <!-- Welcome Image -->
+    <ImageView
+        android:id="@+id/welcomeImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="Welcome Image"
+        android:src="@drawable/home"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.4" />
+
+    <!-- First Button (Reserve Car) -->
+    <Button
+        android:id="@+id/view_reservations"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="View Reservations"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/welcomeImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+         />
+
+    <!-- Second Button (View Available Cars) -->
+    <Button
+        android:id="@+id/View_Users"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="View Users"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/view_reservations"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+       />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

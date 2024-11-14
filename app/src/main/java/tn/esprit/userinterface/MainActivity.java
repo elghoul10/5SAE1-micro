@@ -27,7 +27,9 @@ public class MainActivity extends AppCompatActivity {
         // Add an admin
         db.addUser("manel", "admin@gmail.com", "12345");
         db.addUser("manel2", "admin2@gmail.com", "12345");
-
+        db.addReservation("12345", "9876543210", "150 TND", "Tesla Model 3", "2024-11-15");
+        db.addReservation("12345", "9876543210", "200 TND", "clio Model 3", "2024-11-15");
+        db.addReservation("12345", "9876543210", "300 TND", "MG ", "2024-11-15");
         email_input = findViewById(R.id.email_input);
         password_input = findViewById(R.id.Password_input);
         login_button = findViewById(R.id.login_button);
